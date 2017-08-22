@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 웹 어플리케이션에 대한 설정 등록 -->
+<Context path="/upgo" reloadable="true">
+	<!-- connection poll 설정 등록 -->
+	<Resource name="jdbc/upgo" 
+			  auth="Container"
+              type="javax.sql.DataSource" 
+              driverClassName="oracle.jdbc.OracleDriver"
+              url="jdbc:oracle:thin:@210.16.214.202:1521:xe"
+              username="upgo" password="knit77" 
+              maxTotal="20" maxIdle="10" maxWaitMillis="-1"/>
+
+ 
+</Context>
